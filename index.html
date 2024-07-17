@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build your resume | Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Resume Builder</h1>
+    <form action="#">
+        <div class="name_contact">
+            <h3>Name and contact details</h3>
+            <label for="name">Enter your name : </label>
+            <input type="text" id="name">
+            <label for="contactNumber">Enter your contact number : </label>
+            <input type="number" id="contactNumber">
+            <label for="email">Enter your Email-id : </label>
+            <input type="email"  id="email">
+            <label for="github">Enter your Github URL : </label>
+            <input type="text"  id="github">
+            <label for="linkedIn">Enter your LinkedIn URL : </label>
+            <input type="text"  id="linkedIn">
+        </div>
+        <div class="summarySection">
+            <h3>Profile summary</h3>
+            <label for="summary">Enter your profile summary : </label>
+            <textarea name="" id="summary"></textarea>
+        </div>
+        <div class="skillsSection">
+            <h3>Skill sets</h3>
+            <label for="tech">Enter your technical skills</label>
+            <input type="text" id="tech">
+            <label for="social">Enter your social skills</label>
+            <input type="text" id="social">
+            <label for="others">Enter your other skill stylesets</label>
+            <input type="text" id="others">
+        </div>
+        <div class="experienceSection">
+            <h3>Project and work experience</h3>
+            <div class="ExpSections">
+                <label for="projectTittle">Enter your project or work tittle</label>
+                <input type="text" id="preojectTittle">
+                <label for="description">ENter your project or work details</label>
+                <input type="text" id="description">
+                <label for="date">Enter your time period</label>
+                <input type="text" id="date">
+                <button class="delete btn">Delete section</button>
+            </div>
+            <button class="addSection btn">Add another section</button>
+        </div>
+        <div class="education">
+            <h3>Education and qualification details</h3>
+            <div class="eduSections">
+                <label for="head">Enter qualification heading</label>
+                <input type="text" id="head">
+                <label for="eduDetails">Enter education details</label>
+                <input type="text" id="eduDetails">
+                <button class="delete btn">Delete section</button>
+            </div>
+            <button class="addSection btn">Add another section</button>
+        </div>
+        <div class="certifications">
+            <h3>Certifications section</h3>
+            <label for="certification">Add certifications</label>
+            <input type="text" id="certification">
+            <button class="addSection btn">Add another section</button>
+        </div>
+        <div class="hobbies">
+            <h3>Interests and hobbies</h3>
+            <label for="interests">Enter your interests and hobbies</label>
+            <input type="text" id="interests">
+            <button class="addSection btn">Add another section</button>
+        </div>
+
+        <button type="submit" class="btn">Generate Resume</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
